@@ -48,6 +48,7 @@ a:hover { opacity: 0.85; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
 
 h1, h2, h3, p { margin: 0; }
+h1, h2 { text-wrap: balance; }
 
 .skip {
   position: absolute;
@@ -262,6 +263,7 @@ h1, h2, h3, p { margin: 0; }
 
 @media (max-width: 560px) {
   :root { --gutter: 16px; }
+  .site-nav { margin: 0 -14px; }
   .hero { gap: 32px; padding-top: 32px; padding-bottom: 64px; }
   .hero__actions .button { flex: 1 1 100%; justify-content: center; min-height: 52px; }
   .section { padding-bottom: 64px; gap: 20px; }
@@ -271,7 +273,7 @@ h1, h2, h3, p { margin: 0; }
   .face__title { flex-direction: column; gap: 2px; }
   .face h3 { font-size: 17px; }
   .face__kind { font-size: 11px; text-align: left; }
-  .face__body p, .face__store .chip { display: none; }
+  .face__body p, .face__store .store-link--soon { display: none; }
   .face__store { min-height: 0; }
   .store-link { min-height: 36px; font-size: 14px; }
   .promises { padding-bottom: 72px; }
