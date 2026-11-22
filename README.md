@@ -30,3 +30,5 @@ with
   watch face project), converted to WebP.
 - If the privacy policy changes, update its "Last updated" date and `sitemap.xml`.
 - Search Console verification files (`google*.html`) live in the root and must not be removed.
+- After editing `assets/site.css`, bump the `?v=` number in the stylesheet link of every page:
+  GitHub Pages lets browsers cache files for 10 minutes.
